@@ -10,8 +10,8 @@ import plotly.express as px
 from datetime import datetime
 import io
 
-st.set_page_config(page_title="Stock Analytics — ARMA+GARCH", layout="wide", initial_sidebar_state="expanded")
-st.title("📈 Stock Analytics Platform — Full History + ARMA+GARCH Forecast")
+st.set_page_config(page_title="Stock Analytics — ARMA - GARCH", layout="wide", initial_sidebar_state="expanded")
+st.title("📈 Stock Analytics Platform — ARMA - GARCH Forecast")
 st.markdown("Enter any ticker (e.g., AAPL, MSFT, TSLA) — the app will load full historical data and produce charts, stats and ARMA+GARCH forecasts.")
 
 # -------------------------
@@ -248,5 +248,5 @@ else:
         st.info("Click 'Run Models & Forecast' in the sidebar to fit ARMA+GARCH and produce forecasts.")
 
 st.markdown("---")
-st.markdown("Built with Streamlit · yfinance · statsmodels · arch")
+st.markdown("")
 st.markdown("Tip: Try other tickers like MSFT, TSLA, GOOGL. Models may require enough history to fit reliably.")
